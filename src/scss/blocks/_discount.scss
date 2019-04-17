@@ -1,0 +1,51 @@
+.discount {
+	&-block {
+		margin-top: 36px;
+		display: flex;
+		justify-content: center;
+		padding-bottom: 70px;
+		&__item {
+			border-right: 3px solid $primary;
+			text-align: left;
+			padding-left: 10px;
+			padding-right: 20px;
+			flex-basis: 33.33%;
+		}
+		&__title {
+			font-size: 30px;
+			text-transform: uppercase;
+			padding-top: 17px;
+			font-weight: normal;
+		}
+		&__percent {
+			font-size: 144px;
+			color: $primary;
+		}
+		&__text {
+			@include light;
+			font-size: 30px;
+			margin-bottom: 10px;
+		}
+		&__span {
+			@include light;
+			font-size: 14px;
+		}
+	}
+	&-button {
+		display: flex;
+		justify-content: center;
+	}
+	&__button {
+		padding-bottom: 70px;
+	}
+}
+
+.button_red {
+	padding: 12px 50px;
+	text-transform: lowercase;
+	&:hover {
+		background-color: #fff;
+		color: $primary;
+		border: 2px solid $primary;
+	}
+}
