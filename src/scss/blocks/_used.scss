@@ -1,0 +1,26 @@
+.used {
+	&__title {
+		margin-bottom: 90px;
+	}
+	&-block {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		&__item {
+			width: 487px;
+			background: rgba(0, 0, 0, 0.82);
+			color: #fff;
+			text-align: center;
+			margin-right: 80px;
+			padding: 20px;
+			margin-bottom: 75px;
+		}
+		&__text {
+			font-size: 36px;
+		}
+	}
+}
+
+.text_center {
+	padding-top: 15px;
+}

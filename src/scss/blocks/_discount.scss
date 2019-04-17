@@ -2,6 +2,7 @@
 	&-block {
 		margin-top: 36px;
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: center;
 		padding-bottom: 70px;
 		&__item {
@@ -10,6 +11,9 @@
 			padding-left: 10px;
 			padding-right: 20px;
 			flex-basis: 33.33%;
+			&:last-child {
+				border-right: none;
+			}
 		}
 		&__title {
 			font-size: 30px;
@@ -34,6 +38,7 @@
 	&-button {
 		display: flex;
 		justify-content: center;
+		align-items: center;
 	}
 	&__button {
 		padding-bottom: 70px;
@@ -43,6 +48,7 @@
 .button_red {
 	padding: 12px 50px;
 	text-transform: lowercase;
+	border: 2px solid transparent;
 	&:hover {
 		background-color: #fff;
 		color: $primary;

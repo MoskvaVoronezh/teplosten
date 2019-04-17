@@ -1,0 +1,10 @@
+.section {
+	&__title {
+		margin-top: 70px;
+		text-align: center;
+		@include medium;
+		font-size: 36px;
+		text-transform: uppercase;
+		color: $primary;
+	}
+}
