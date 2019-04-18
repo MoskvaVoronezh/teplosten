@@ -1,0 +1,31 @@
+.video {
+	&__title {
+		margin-top: 70px;
+		margin-bottom: 40px;
+
+	}
+	&-block {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		&__item {
+			margin-right: 30px;
+		}
+		&__frame {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 25px;
+			&-iframe {
+				width: 454px;
+				height: 264px;
+			}
+		}
+		&__subtitle {
+			max-width: 454px;
+			text-align: center;
+			@include light;
+			font-size: 18px;
+			color: #000;
+		}
+	}
+}

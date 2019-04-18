@@ -1,0 +1,14 @@
+.certificates {
+	&-block {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		&__image {
+			max-width: 240px;
+			max-height: 165px;
+			object-fit: contain;
+		}
+		
+	}
+}
