@@ -337,6 +337,23 @@
 	</div>
 	<div class="red-line"></div>
 	<!-- slider -->
+	<section class="section project">
+		<h2 class="section__title project__title">Проекты готовых домов</h2>
+		<div class="project-slider">
+			<div class="project-slider__item">
+				1
+			</div>
+			<div class="project-slider__item">
+				2
+			</div>
+			<div class="project-slider__item">
+				3
+			</div>
+			<div class="project-slider__item">
+				4
+			</div>
+		</div>
+	</section>
 	<section class="section video">
 		<div class="container">
 			<h2 class="section__title video__title">Видео о блоке Теплостен</h2>
@@ -487,8 +504,57 @@
 				<a href="v@teplosten-sib.ru" class="map-block__link">v@teplosten-sib.ru</a>
 			</div>
 		</div>
-		
 	</section>
 </main>
+<footer class="footer">
+	<div class="container">
+		<nav class="main-menu footer__menu">
+			<ul class="menu-list menu__list footer__menu-list">
+				<li class="menu-list__item footer__menu-item">
+					<a href="#" class="menu-list__link footer__menu-link">
+						Главная
+					</a>
+				</li>
+				<li class="menu-list__item footer__menu-item">
+					<a href="#" class="menu-list__link footer__menu-link">
+						Каталог
+					</a>
+				</li>
+				<li class="menu-list__item footer__menu-item">
+					<a href="#" class="menu-list__link footer__menu-link">
+						Калькулятор
+					</a>
+				</li>
+				<li class="menu-list__item footer__menu-item">
+					<a href="#" class="menu-list__link footer__menu-link">
+						Вопрос-ответ
+					</a>
+				</li>
+				<li class="menu-list__item footer__menu-item">
+					<a href="#" class="menu-list__link footer__menu-link">
+						Контакты
+					</a>
+				</li>
+			</ul>
+			<div class="footer-top__btn">
+				<button class="btn-top"></button>
+			</div>
+		</nav>
+		<div class="footer__copy">
+			<p class="footer__copy-text">
+				Copyright ©2019 teplosten-sib
+			</p>
+		</div>
+	</div>
+</footer>
+<script
+  src="https://code.jquery.com/jquery-3.4.0.slim.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+	  $(document).ready(function() {
+			$(".project-slider").slick({
+			});
+	  });
+  </script>
 </body>
 </html>
