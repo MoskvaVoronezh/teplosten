@@ -1,14 +1,43 @@
 .certificates {
+	&__wrap {
+		display: flex;	
+		margin-bottom: 30px;
+	}
+	&__image {
+		margin-right: 30px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
 	&-block {
 		display: flex;
-		justify-content: space-between;
-		align-items: center;
 		flex-wrap: wrap;
 		&__image {
-			max-width: 240px;
-			max-height: 165px;
-			object-fit: contain;
+			margin-bottom: 30px;
 		}
-		
+		&__item {
+			margin-right: 27px;
+		}
+		&__link {
+			&-img {
+				max-width: 166px;
+				height: 240px;
+			}
+		}
+		&__text {
+			@include light;
+			font-size: 18px;
+			color: #fff;
+			max-width: 166px;
+			text-align: center;
+		}
+		&__subtitle {
+			text-align: center;
+			color: #fff;
+			@include light;
+			font-size: 18px;	
+			max-width: 300px;
+			margin: 0 auto;
+		}
 	}
 }
