@@ -41,3 +41,36 @@
 		}
 	}
 }
+
+@media (max-width: 1199px) {
+	.certificates {
+		&-block {
+			justify-content: space-around;
+			&__item {
+				margin-bottom: 30px;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.certificates {
+		&__wrap {
+			flex-direction: column;
+			justify-content: center;
+			margin-bottom: 0;
+		}
+		&__image {
+			display: flex;
+			justify-content: center;
+			margin-right: 0;
+			margin-bottom: 30px;
+		}
+		&-block {
+			justify-content: center;
+			&__item {
+				margin-right: 0;
+			}
+		}
+	}
+}

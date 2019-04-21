@@ -1,7 +1,7 @@
 .project {
 	&__title {
 		padding-top: 90px;
-		margin-bottom: 30px;
+		margin-bottom: 70px;
 	}
 	&-slider {
 		width: 100%;
@@ -14,6 +14,11 @@
 		&__wrap {
 			display: flex;
 		}
+	}
+	&__wrap {
+		display: flex;
+		justify-content: center;
+		width: 100%;
 	}
 }
 
@@ -74,8 +79,35 @@
 @media (max-width: 1199px) {
 	.project {
 		&-slider {
-			width: 90%;
-			margin: 0 auto;
+			width: 80%;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.project {
+		&-slider {
+			width: 80%;
+			&__wrap {
+				flex-direction: column;
+			}
+		}
+	}
+	.arrow-right {
+		top: calc(52%);
+	}
+	
+	.arrow-left {
+		top: calc(52%);
+	}
+}
+
+@media (max-width: 768px) {
+	.slider {
+		&-wrap {
+			&__text {
+				display: none;
+			}
 		}
 	}
 }
