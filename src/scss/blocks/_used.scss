@@ -12,7 +12,7 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 		&__item {
-			width: 487px;
+			max-width: 487px;
 			background: rgba(0, 0, 0, 0.82);
 			color: #fff;
 			text-align: center;
@@ -28,4 +28,33 @@
 
 .text_center {
 	padding-top: 15px;
+}
+
+@media (max-width: 1199px) {
+	.used {
+		&-block {
+			&__item {
+				margin-right: 20px;
+				max-width: 460px;
+			}
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.used {
+		&-block {
+			justify-content: center;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.used {
+		&-block {
+			&__text {
+				font-size: 30px;
+			}
+		}
+	}
 }

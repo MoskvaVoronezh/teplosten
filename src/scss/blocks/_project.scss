@@ -70,3 +70,12 @@
 		outline: none;
 	}
 }
+
+@media (max-width: 1199px) {
+	.project {
+		&-slider {
+			width: 90%;
+			margin: 0 auto;
+		}
+	}
+}

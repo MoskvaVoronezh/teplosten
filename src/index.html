@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body>
-<header class="header">
+<header class="header" id="top">
 	<div class="container">
 		<div class="header-top header__top">
 			<div class="header__logo">
@@ -23,16 +23,17 @@
 						</a>
 						<ul class="info-list">
 							<li class="info-list__item">
-								<a href="tel:8-383-41-5-83-22">
+								<a class="info-list__item-link" href="tel:8-383-41-5-83-22">
 									8-383-41-5-83-22
 								</a>
 							</li>
 							<li class="info-list__item">
-								<a href="tel:8-913-911-14-32">
+								<a class="info-list__item-link" href="tel:8-913-911-14-32">
 									8-913-911-14-32
 								</a>
 							</li>
 						</ul>
+						<img src="/assets/img/header/current.svg" alt="current" class="info-block__phone-current">
 					</div>
 					<div class="info-block__btn">
 						<button class="info-block__button">
@@ -190,10 +191,10 @@
 					<p class="used-block__text">Производственных помещений</p>
 				</div>
 				<div class="used-block__item">
-					<p class="used-block__text text_center">Торговых зданий</p>
+					<p class="used-block__text">Приусадебных и дачных домов</p>
 				</div>
 				<div class="used-block__item">
-					<p class="used-block__text">Приусадебных и дачных домов</p>
+					<p class="used-block__text text_center">Торговых и выставочных зданий</p>
 				</div>
 			</div>
 		</div>
@@ -612,7 +613,7 @@
 				</li>
 			</ul>
 			<div class="footer-top__btn">
-				<button class="btn-top"></button>
+				<a href="#top" class="btn-top"></a>
 			</div>
 		</nav>
 		<div class="footer__copy">
@@ -626,13 +627,16 @@
   src="https://code.jquery.com/jquery-3.4.0.slim.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script>
-	  $(document).ready(function() {
+	  $(document).ready(function () {
 			$(".project-slider").slick({
 				slideToShow: 1,
 				slideToScroll: 1,
 				infinite: true,
 				prevArrow: '<button class="arrow-left"></button>',
 				nextArrow: '<button class="arrow-right"></button>'
+			});
+			$(".info-block__phone-current").on("click", function () {
+				$(".info-list").toggleClass("info-list_active");
 			});
 	  });
   </script>

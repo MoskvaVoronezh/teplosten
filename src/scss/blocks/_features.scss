@@ -20,9 +20,6 @@
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		&__item {
-			flex-basis: 16.66%;
-		}
 		&__ellipse {
 			border-radius: 50%;
 			background-color: #fff;
@@ -44,6 +41,31 @@
 			font-size: 18px;
 			@include light;
 			color: #fff;
+		}
+	}
+}
+
+@media (max-width: 1199px) {
+	.features {
+		&-block {
+			justify-content: space-around;
+
+			&__item {
+				margin-bottom: 30px;
+			}
+		}
+	}
+}
+@media (max-width: 991px) {
+
+	}
+@media (max-width: 768px) {
+	.section {
+		&-features {
+			&__title {
+				margin-bottom: 45px;
+				font-size: 28px;
+			}
 		}
 	}
 }

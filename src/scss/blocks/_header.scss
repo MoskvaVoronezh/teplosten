@@ -16,6 +16,7 @@
 		display: flex;
 		&__number {
 			padding-top: 12px;
+			position: relative;
 		}
 		&__phone {
 			text-decoration: none;
@@ -25,16 +26,13 @@
 			position: relative;
 			max-width: 263px;
 			margin-left: 15px;
-			&:after {
-				content: '';
+			&-current {
 				position: absolute;
-				display: block;
 				right: -30px;
-				top: 50%;
-				margin-top: -4px;
-				width: 14px;
-				height: 8px;
-				background: url("/assets/img/header/current.svg") center no-repeat;
+				top: calc(50%-3px);
+				&:hover {
+					cursor: pointer;
+				}
 			}
 		}
 		&__btn {
@@ -50,6 +48,9 @@
 			background-color: $primary;
 			border-radius: 5px;
 			text-transform: uppercase;
+			&:hover {
+				cursor: pointer;
+			}
 			&-img {
 				height: 23px;
 				width: 23px;
@@ -61,7 +62,27 @@
 	}
 	&-list {
 		list-style: none;
+		position: absolute;
+		top: 52px;
+		left: 0px;
+		background-color: #fff;
+		z-index: 10;
+		text-align: center;
+		width: 270px;
 		display: none;
+		transition: .5s ease-out;
+		&_active {
+			display: block;
+		}
+		&__item {
+			margin-bottom: 10px;
+			&-link {
+				font-size: 24px;
+				text-decoration: none;
+				color: #000;
+				background-color: #fff;
+			}
+		}
 	}
 }
 
@@ -86,5 +107,54 @@
 		display: flex;
 		justify-content: space-around;
 		margin: 0;
+	}
+}
+
+@media (max-width: 991px) {
+	.info {
+		&-block {
+			&__number {
+				display: none;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.info {
+		&-block {
+			&__button {
+				&-img {
+					display: none;
+				}
+			}
+		}
+	}
+	.menu {
+		&__list {
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.header {
+		&__img {
+			width: 120px;
+		}
+	}
+	.info {
+		&-block {
+			&__button {
+				font-size: 14px;
+			}
+		}
+	}
+	.house {
+		&__text {
+			font-size: 18px;
+		}
 	}
 }

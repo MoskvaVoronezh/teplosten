@@ -32,3 +32,24 @@
 		}
 	}
 }
+
+@media (max-width: 1199px) {
+	.invoices {
+		&-block {
+			&__item {
+				margin-bottom: 30px;
+			}
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.invoices {
+		&-block {
+			justify-content: center;
+			&__item {
+				margin-right: 20px;
+			}
+		}
+	}
+}

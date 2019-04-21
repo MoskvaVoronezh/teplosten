@@ -55,3 +55,37 @@
 		border: 2px solid $primary;
 	}
 }
+
+@media (max-width: 991px) {
+	.discount {
+		&-block {
+			&__percent {
+				font-size: 90px;
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	.discount {
+		&-block {
+			&__percent {
+				font-size: 50px;
+			}
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.discount {
+		&-block {
+			flex-direction: column;
+			padding-bottom: 20px;
+			&__item {
+				border: none;
+			}
+		}
+		&-button {
+			justify-content: flex-start;
+		}
+	}
+}
